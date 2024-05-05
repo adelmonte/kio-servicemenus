@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/*;
+Actions=SetAsWallpaperXFCE;
+X-KDE-Priority=TopLevel
+X-KDE-StartupNotify=false
+
+[Desktop Action SetAsWallpaperXFCE]
+Icon=preferences-desktop-wallpaper
+Name=Set as Desktop Background
+Exec=xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitoreDP-1/workspace0/last-image --set %f &&  xfdesktop --reload
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+Icon=system-file-manager
+Actions=OpenAsRootKDE5
+# ServiceTypes=KonqPopupMenu/Plugin,inode/directory,inode/directory-locked
+MimeType=inode/directory;inode/directory-locked
+
+[Desktop Action OpenAsRootKDE5]
+Exec=bash -c 'if [ "$XDG_SESSION_TYPE" = "wayland" ]; then xhost +si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch thunar %U && xhost -si:localuser:root ; else pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true thunar %U; fi;'
+Icon=system-file-manager
+Name=Open as Root
