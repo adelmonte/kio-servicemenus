@@ -8,6 +8,6 @@ X-KDE-StartupNotify=false
 
 [Desktop Action SetAsWallpaperXFCE]
 Icon=preferences-desktop-wallpaper
-Name=Set as Desktop Background
+Name=Set as Wallpaper
 Exec=xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitoreDP-1/workspace0/last-image --set %f &&  xfdesktop --reload
 

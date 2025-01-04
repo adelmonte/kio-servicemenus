@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+Icon=image
+Actions=ConvertToPNG
+MimeType=image/webp;
+
+[Desktop Action ConvertToPNG]
+Exec=ffmpeg -i %U %U.png
+Icon=image
+Name=Convert to PNG

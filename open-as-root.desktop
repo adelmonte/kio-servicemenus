@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Service
-Icon=system-file-manager
+Icon=utilities-terminal
 Actions=OpenAsRootKDE5
 # ServiceTypes=KonqPopupMenu/Plugin,inode/directory,inode/directory-locked
 MimeType=inode/directory;inode/directory-locked
