@@ -5,8 +5,7 @@ X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 MimeType=inode/directory;
 Actions=OpenInKonsole
 X-KDE-Priority=TopLevel
-
 [Desktop Action OpenInKonsole]
 Name=Open in Terminal
 Icon=utilities-terminal
-Exec=sh -c 'cd %f && kitty'
+Exec=sh -c 'cd "$0" && kitty' %f
